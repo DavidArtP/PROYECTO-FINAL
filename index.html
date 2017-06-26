@@ -1,100 +1,294 @@
 <html>
-    <head>
-        <meta name="viewport" content="width=device=width, initial-scales=1.0">
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="css/styles.css" rel="stylesheet" media="screen">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
-        <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <!-- Navbar-->
-        <nav class="navbar navbar-default fondo-negro">
-            <div class="container-fluid">
-                <div class="col-md-12">
-                    <div class="titulo-navbar letra-amarilla letra-titulo letra-caligrafia alineacion-central">
-                        Gilbet
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        <!-- Tabs menu principal-->
-        <section>
-            <ul class="nav nav-pills nav-justified" id="myTab">
-                <li class="active"><a href="#tab_a" data-toggle="pill">Home</a></li>
-                        <!-- Pagina Principal con informacion basica-->
-                <li><a href="#tab_b" data-toggle="pill">How Does It Work?</a></li>
-                        <!-- Como Funciona-->
-                <li><a href="#tab_c" data-toggle="pill">Games</a></li>
-                        <!-- Juegos que participan-->
-                <li><a href="#tab_d" data-toggle="pill">Sign In</a></li>
-                        <!-- Cuenta y contraseña-->
-                <li><a href="#tab_d" data-toggle="pill">Sign Up</a></li>
-                        <!-- Inscripcion-->
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane active" id="tab_a">
-                    <section class="section_1">
-                        <div class="row"> 
-                            <div class="col-md-1 col-centro">
-                                <img src="img/circuloamarillo.png" class="img-titulo"></img>
-                            </div>
-                            <div class="col-md-11">
-                                <div class="letra-amarilla letra-titulo">Who we are?</div>
-                            </div>
-                        </div>
-                        <div class="letra-blanca letra-parrafo"> 
-                            Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
-                        </div>
-                       
-                        <!--Primer dato-->
-                       <div class="row margen-top"> 
-                            <div class="col-md-1 ">
-                                <img src="img/circuloamarillo.png" class="img-parrafo"></img>
-                            </div>
-                            <div class="col-md-11">
-                                <div class="letra-blanca letra-parrafo">Crew:</div>
-                            </div>
-                            </div>
-                        <!--Segundo dato-->
-                        <div class="row margen-top"> 
-                            <div class="col-md-1 ">
-                                <img src="img/circuloamarillo.png" class="img-parrafo"></img>
-                            </div>
-                            <div class="col-md-11">
-                                <div class="letra-blanca letra-parrafo">Information:</div>
-                            </div>
-                            </div>
-                        <!--Tercer dato-->
-                            <div class="row margen-top"> 
-                            <div class="col-md-1">
-                                <img src="img/circuloamarillo.png" class="img-parrafo"></img>
-                            </div>
-                            <div class="col-md-11">
-                                <div class="letra-blanca letra-parrafo">Ubication:</div>
-                            </div>
-                            </div>
-                        <!--Cuarto dato-->
-                            <div class="row margen-top"> 
-                            <div class="col-md-1">
-                                <img src="img/circuloamarillo.png" class="img-parrafo"></img>
-                            </div>
-                            <div class="col-md-11">
-                                <div class="letra-blanca letra-parrafo">Contact us:</div>
-                            </div>
-                            </div>
-                        </section>
-                </div>
-                <div class="tab-pane" id="tab_b">
-                    Texto b
-                </div>
-                <div class="tab-pane" id="tab_c">
-                    Texto c
-                </div>
-                <div class="tab-pane" id="tab_d">
-                    Texto d
+
+<head>
+    <meta name="viewport" content="width=device=width, initial-scales=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/styles.css" rel="stylesheet" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+
+    </script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!-- Navbar-->
+    <nav class="navbar navbar-default fondo-negro">
+        <div class="container-fluid">
+            <div class="col-md-12">
+                <div class="titulo-navbar letra-amarilla letra-titulo letra-caligrafia alineacion-central">
+                    Gilbet
                 </div>
             </div>
-            
-        </section>
-    </body>
+        </div>
+    </nav>
+    <!-- Tabs menu principal-->
+    <section>
+        <ul class="nav nav-pills nav-justified" id="myTab">
+            <li class="active"><a href="#tab_a" data-toggle="pill">Home</a></li>
+            <!-- Pagina Principal con informacion basica-->
+            <li><a href="#tab_b" data-toggle="pill">How Does It Work?</a></li>
+            <!-- Como Funciona-->
+            <li><a href="#tab_c" data-toggle="pill">Games</a></li>
+            <!-- Juegos que participan-->
+            <li><a href="#tab_d" data-toggle="pill">Sign In</a></li>
+            <!-- Cuenta y contraseña-->
+            <li><a href="#tab_e" data-toggle="pill">Sign Up</a></li>
+            <!-- Inscripcion-->
+        </ul>
+        <!--PRIMERA PAGINA-->
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab_a">
+                <section class="section_1">
+                    <div class="row">
+                        <div class="col-md-1 col-centro">
+                            <img src="img/circuloamarillo.png" class="img-titulo"></img>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-amarilla letra-titulo">Who we are?</div>
+                        </div>
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica
+                        a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un
+                        libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno
+                        en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s
+                        con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente
+                        con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem
+                        Ipsum.
+                    </div>
+
+                    <!--Primer dato-->
+                    <div class="row margen-top">
+                        <div class="col-md-1 ">
+                            <img src="img/circuloamarillo.png" class="img-parrafo"></img>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-blanca letra-parrafo">Crew:</div>
+                            <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                                ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+                                (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los
+                                mezcló de tal manera que logró hacer un libro de textos especimen.
+                            </div>
+                        </div>
+                    </div>
+                    <!--Segundo dato-->
+                    <div class="row margen-top">
+                        <div class="col-md-1 ">
+                            <img src="img/circuloamarillo.png" class="img-parrafo"></img>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-blanca letra-parrafo">Information:</div>
+                            <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                                ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+                                (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los
+                                mezcló de tal manera que logró hacer un libro de textos especimen.
+                            </div>
+                        </div>
+                    </div>
+                    <!--Tercer dato-->
+                    <div class="row margen-top">
+                        <div class="col-md-1">
+                            <img src="img/circuloamarillo.png" class="img-parrafo"></img>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-blanca letra-parrafo">Ubication:</div>
+                            <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                                ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+                                (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los
+                                mezcló de tal manera que logró hacer un libro de textos especimen.
+                            </div>
+                        </div>
+                    </div>
+                    <!--Cuarto dato-->
+                    <div class="row margen-top">
+                        <div class="col-md-1">
+                            <img src="img/circuloamarillo.png" class="img-parrafo"></img>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-blanca letra-parrafo">Contact us:</div>
+                            <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                                ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor
+                                (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los
+                                mezcló de tal manera que logró hacer un libro de textos especimen.
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--SEGUNDA PAGINA-->
+            <div class="tab-pane" id="tab_b">
+                <section class="section_1">
+                    <div class="row">
+                        <div class="col-md-1 col-centro">
+                            <img src="img/circuloamarillo.png" class="img-titulo"></img>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-amarilla letra-titulo">Process of Work</div>
+                        </div>
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        1.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        2.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        3.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        4.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        5.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        6.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        7.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-blanca letra-parrafo">
+                        8.-Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno
+                        estándar de las industrias desde el año 1500
+                    </div>
+                    <div class="letra-amarilla letra-titulo-secundario">Prediction</div>
+                    <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                        el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                        que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que
+                    </div>
+                    <div class="letra-amarilla letra-titulo-secundario">Result</div>
+                    <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                        el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                        que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que
+                    </div>
+                    <div class="letra-amarilla letra-titulo-secundario">Win or Lose</div>
+                    <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido
+                        el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona
+                        que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que
+                    </div>
+            </div>
+            <!--TERCERA PAGINA-->
+            <div class="tab-pane" id="tab_c">
+                <section class="section_1">
+                    <div class="row">
+                        <div class="col-md-1 col-centro">
+                            <img src="img/circuloamarillo.png" class="img-titulo"></img>
+                        </div>
+                        <div class="col-md-11">
+                            <div class="letra-amarilla letra-titulo">Games</div>
+                            <div class="letra-blanca letra-parrafo">Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum
+                                ha sido el texto de relleno estándar de las industrias desde el año 1500,
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row margen-imagenes">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/overwatch.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/arma3.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/r6.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/starcraft2.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/battleground.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-1">
+                        </div>
+                    </div>
+                    <div class="row margen-imagenes">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/dota2.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/smite.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/lol.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/hots.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/paragon.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-1">
+                        </div>
+                    </div>
+                    <div class="row margen-imagenes">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/gg.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/smash4.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/sf5.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/tekken7.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/injustice2.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-1">
+                        </div>
+                    </div>
+                    <div class="row margen-imagenes">
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/pokken.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/pokemon.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/heartstone.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/magic.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-2">
+                            <img src="img/gwent.jpg" class="img-juegos"></img>
+                        </div>
+                        <div class="col-md-1">
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--CUARTA PAGINA-->
+            <div class="tab-pane" id="tab_d">
+                <section class="section_1">
+                    Texto d
+                </section>
+            </div>
+            <!--QUINTA PAGINA-->
+            <div class="tab-pane" id="tab_e">
+                <section class="section_1">
+                    Texto e
+                </section>
+            </div>
+
+
+</body>
+
 </html>
