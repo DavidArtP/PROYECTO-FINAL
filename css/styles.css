@@ -72,3 +72,15 @@ height: 70px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+.checkbox label, .radio label {
+    color: white
+}
+label {
+    color: #ffd82d
+}
+.color-face{
+    color: #3b5998
+}
+.margen-login{
+    margin-top: 150px;
+}
