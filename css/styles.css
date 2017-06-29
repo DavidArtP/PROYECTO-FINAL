@@ -89,3 +89,48 @@ label {
     margin-right: 250px;
     margin-top: 70px;   
 }
+.margen-selecciones{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+ .margen-selecciones input[type='radio']:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+
+    .margen-selecciones input[type='radio']:checked:after {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #ffd82d;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+    }
+    .margen-pills{
+        margin-top: 0%;
+    }
+    .margen-imagenes2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.img-juegos2{
+    width: 200px;
+    height: 150px;
+}
+.margen-tarjeta-credito{
+    margin-right: 200px;
+}

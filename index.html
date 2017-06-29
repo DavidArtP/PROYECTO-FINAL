@@ -7,6 +7,15 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 
     </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+
+
+
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 
@@ -51,7 +60,7 @@
     </nav>
     <!-- Tabs menu principal-->
     <section>
-        <ul class="nav nav-pills nav-justified" id="myTab">
+        <ul class="nav nav-pills nav-justified margen-pills" id="myTab">
             <li class="active"><a href="#tab_a" data-toggle="pill">Home</a></li>
             <!-- Pagina Principal con informacion basica-->
             <li><a href="#tab_b" data-toggle="pill">How Does It Work?</a></li>
@@ -304,7 +313,7 @@
                 </section>
             </div>
             <!--CUARTA PAGINA-->
- <div class="tab-pane" id="tab_d">
+            <div class="tab-pane" id="tab_d">
                 <section class="section_1">
                     <div class="row">
                         <div class="col-md-1 col-centro">
@@ -312,79 +321,147 @@
                         </div>
                         <div class="col-md-11">
                             <div class="letra-amarilla letra-titulo">Sign In</div>
-</div>
-                    <form>
-                        <section class="container margen-login">
+                        </div>
+                        <form>
+                            <section class="container margen-login">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email Address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+                                </fb:login-button>
+                                <div class="checkbox">
+                                    <label>
+      <input class="letra-blanca" type="checkbox"> Remember Me
+    </label>
+                                </div>
+                            <a href="yalogeado.html"
+                                <button type="submit" class="btn btn-default">Log In</button>
+                            </a>
+                        </form>
+                        </section>
+                </section>
+                </div>
+                <!--QUINTA PAGINA-->
+                <div class="tab-pane" id="tab_e">
+                    <section class="section_1 margen-der-izq">
+                        <div class="row">
+                            <div class="col-md-1 col-centro">
+                                <img src="img/circuloamarillo.png" class="img-titulo"></img>
+                            </div>
+                            <div class="col-md-11">
+                                <div class="letra-amarilla letra-titulo">Sign Up</div>
+                            </div>
                             <div class="form-group">
                                 <label for="exampleInputEmail1">Email Address</label>
                                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                             </div>
                             <div class="form-group">
-                                <label for="exampleInputPassword1">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                <label for="exampleInputEmail1">Name(s)</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name(s)">
                             </div>
-                            <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-                            </fb:login-button>
-                            <div class="checkbox">
-                                <label>
-      <input class="letra-blanca" type="checkbox"> Remember Me
-    </label>
-                            </div>
-                            <button type="submit" class="btn btn-default">Log In</button>
-                    </form>
-                    </section>
-                </section>
-            </div>
-            <!--QUINTA PAGINA-->
- <div class="tab-pane" id="tab_e">
-                <section class="section_1 margen-der-izq">
-                    <div class="row">
-                        <div class="col-md-1 col-centro">
-                            <img src="img/circuloamarillo.png" class="img-titulo"></img>
-                        </div>
-                        <div class="col-md-11">
-                            <div class="letra-amarilla letra-titulo">Sign Up</div>
-</div>
-                     <div class="form-group">
-                        <label for="exampleInputEmail1">Email Address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Name(s)</label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Name(s)">
-                    </div>
-                    <div class="form-group">
-                            <label for="exampleInputEmail1">Last Name</label>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Last Name</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Last Name">
-                    </div>
-                    <div class="form-group">
-                            <label for="exampleInputEmail1">User Name</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">User Name</label>
                                 <input type="text" class="form-control" id="exampleInputEmail1" placeholder="User Name">
-                    </div>
-                    <div class="form-group">
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputPassword1">Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                    </div>
-                    <div class="form-group">
+                            </div>
+                            <div class="form-group">
                                 <label for="exampleInputPassword1">Confirm Password</label>
                                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Confirm Password">
+                                <section class="margen-selecciones">
+                                    <div class="row">
+                                        <div class="radio-inline">
+                                            <label><input type="radio" name="optradio">Male</label>
+                                        </div>
+                                        <div class="radio-inline">
+                                            <label><input type="radio" name="optradio">Female</label>
+                                        </div>
+                                        <div class="radio-inline">
+                                            <label><input type="radio" name="optradio">Other</label>
+                                        </div>
+                                    </div>
+                                </section>
+                                <div class="col-md-11">
+                                    <div class="letra-amarilla letra-titulo-secundario">Birth Date:</div>
+                                </div>
+                                <div class="container">
+                                    <div class="container">
+                                        <div class='col-md-6'>
+                                            <div class="form-group">
+                                                <div class='input-group date' id='datetimepicker'>
+                                                    <input type='text' class="form-control" />
+                                                    <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-11">
+                                <div class="letra-amarilla letra-titulo-secundario">Region:</div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ej;America, Europe, Asia and Africa">
+                            </div>
+                            <div class="col-md-11">
+                                <div class="letra-amarilla letra-titulo-secundario">Forms of Payment:</div>
+                            </div>
+                        </div>
+                        <div class="row margen-imagenes2">
+                            <div class="col-md-1">
+                            </div>
+                            <div class="col-md-3">
+                                <img src="img/paypallogo.png" class="img-juegos2"></img>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="img/masterlogo.png" class="img-juegos2"></img>
+                            </div>
+                            <div class="col-md-3">
+                                <img src="img/visalogo.png" class="img-juegos2"></img>
+                            </div>
+                            <div class="col-md-2">
+                            </div>
+                        </div>
+            <div class="container margen-tarjeta-credito">
+                    <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Credit Card Number">
                     </div>
-                </section>
+                    <div class="form-group">
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Expiration Date (Month/Year) Ej. 02(February)/19(Year:2019)">
+                    </div>
+                    <div class="form-group">
+                                <input type="password" class="form-control" id="exampleInputEmail1" placeholder="CVV Code">
+                    </div>
             </div>
-            <script>
-                $(document).ready(function () {
-
-                    FB.getLoginStatus(function (response) {
-                        statusChangeCallback(response);
-                    });
-
-                    function checkLoginState() {
+                    </section>
+                </div>
+                <script>
+                    $(document).ready(function () {
+                        $('#datetimepicker').datetimepicker();
                         FB.getLoginStatus(function (response) {
                             statusChangeCallback(response);
                         });
-                    }
-                });
-            </script>
+
+                        function checkLoginState() {
+                            FB.getLoginStatus(function (response) {
+                                statusChangeCallback(response);
+                            });
+                        }
+                    });
+                </script>
 
 </body>
 
