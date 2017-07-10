@@ -1,0 +1,26 @@
+.margin-top{
+    margin-top: 80px;
+}
+.imagen-perfil{
+    height: 275px;
+    width: 275px;
+    border: 4px solid white;
+}
+.letra-news{
+    font-size: 40px;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+tr:nth-child(odd) {
+    background-color: #aaaaaa;
+}
+table{
+    width: 100%;
+}
