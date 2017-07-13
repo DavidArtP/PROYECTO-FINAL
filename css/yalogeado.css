@@ -17,9 +17,18 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+
 }
+tr:nth-child(even) .time{
+        color: #CCAD24
+}
+
 tr:nth-child(odd) {
     background-color: #aaaaaa;
+}
+
+tr:nth-child(odd) .time{
+        color: #ffd82d
 }
 table{
     width: 100%;
@@ -64,7 +73,7 @@ tbody td:last-child, thead th:last-child {
     width: 60%;
 }
 .marco100{
-    width: 100%;
+    width: 372px;
     height: 100%;
 }
 .imagen-logo{
@@ -80,4 +89,12 @@ tbody td:last-child, thead th:last-child {
 }
 .nopadding{
     padding: 0px !important;
+}
+.imagengames{
+    height: 140px;
+    width: 100px;
+    margin-left: 35%;
+}
+.marginbottom{
+    margin-bottom: 50px;
 }

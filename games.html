@@ -7,6 +7,10 @@
     <link href="css/styles.css" rel="stylesheet" media="screen">
     <link href="css/yalogeado.css" rel="stylesheet" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        <link rel="stylesheet" href= "https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" >
+            <script src="https://code.jquery.com/jquery-1.10.2.js" >
+    </script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
     </script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -44,23 +48,326 @@
                     <img src="img/softandwet.jpg" class="imagen-perfil"></img>
                     <div class="letra-parrafo letra-amarilla">Darckarian
                     </div>
-                    <div class="col-md-1"></div>
-                    <div class="col-md-8">
-                        <nav class="navbar navbar-default fondo-negro">
-                            <div class="container-fluid">
-                                <div class="col-md-12">
-                                    <div class="titulo-navbar letra-amarilla letra-news letra-caligrafia alineacion-central">
-                                        Notifications
-                                    </div>
-                                </div>
+                    <br>
+                    <div class="container container2">
+                        <br>
+                        <a class="letra-blanca" href="games.html"> Games</a>
+                        <hr>
+                        <a class="letra-blanca"> Players</a>
+                        <hr>
+                        <a class="letra-blanca"> Events</a>
+                        <hr>
+                        <a class="letra-blanca"> Payment Configuration</a>
+                        <hr>
+                        <a class="letra-amarilla"> START BETTING</a>
+                        <hr>
+                        <a class="letra-blanca"> RESULTS and REWARDS</a>
+                        <hr>
+                        <a class="letra-blanca"> Help</a>
+                        <hr>
+                        <a class="letra-blanca"> Report a Problem</a>
+                        <hr>
+                        <a class="letra-blanca"> EDIT PROFILE</a>
+                        <hr>
+                        <a class="letra-blanca"> LOG OUT</a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <nav class="navbar navbar-default fondo-negro">
+                    <div class="container-fluid">
+                        <div class="col-md-12">
+                            <div class="titulo-navbar letra-amarilla letra-news letra-caligrafia alineacion-central">
+                                Games that you follow
                             </div>
-                        </nav>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="table1" class="bitacoratable">
+                            <table>
+                                <tbody>
+                                    <tr class="childrow">
+                                        <td collspan="2">
+                                            <table class="scroll childgrid">
+                                                <tr>
+                                                    <th class="marco100">GAME</th>
+                                                    <th class="marco100">NAME</th>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/overwatch.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Overwatch</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/paragon.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Paragon</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/r6.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Raimbow Six Seige</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/injustice2.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Injustice 2</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/sf5.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Street Fighter V</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/tekken7.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Tekken 7</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/heartstone.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Hearthstone</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/battleground.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Player Unknown`s Battlegrounds</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/gg.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Guilty Gear Xrd</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/pokken.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Pokken Tournament</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <nav class="navbar navbar-default fondo-negro margin-top">
+                    <div class="container-fluid">
+                        <div class="col-md-12">
+                            <div class="titulo-navbar letra-amarilla letra-news letra-caligrafia alineacion-central">
+                                All Games
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="table2" class="bitacoratable">
+                            <table>
+                                <tbody>
+                                    <tr class="childrow">
+                                        <td>
+                                            <table class="scroll childgrid">
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/overwatch.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Overwatch</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/overwatch.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Overwatch</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/overwatch.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Overwatch</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/overwatch.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Overwatch</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/overwatch.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Overwatch</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/overwatch.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Overwatch</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/overwatch.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Overwatch</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/overwatch.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Overwatch</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/overwatch.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Overwatch</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                                <tr class="draggable_tr">
+                                                    <td class="marco100">
+                                                        <img src="img/overwatch.jpg" class="imagengames"></img>
+                                                    </td>
+                                                    <td class="marco100">
+                                                        <p>Overwatch</p>
+                                                        <p class="time">(Visto:Hace 3 horas)</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
+    </section>
+<br><br><br><br>
+                <footer class="marginbottom">
+                    <hr>
+                        <div class="container">
+                            <div class="col-md-12">
+                                <div class="col-md-2">
+                                    <p class="letra-blanca">Contact Us</p> 
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="letra-blanca">Always Open</p> 
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="letra-blanca">Programing</p> 
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="letra-blanca">Studies</p> 
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="letra-blanca">Partnerships</p> 
+                                </div>
+                                <div class="col-md-2">
+                                    <p class="letra-blanca">Ubication:My House</p> 
+                                </div>
+                            </div>
+                        </div>
+                        
+                </footer>
+
+
+    <script>
+            $("#table1 .childgrid tr, #table2 .childgrid tr").draggable({
+                helper: function () {
+                    var selected = $('.childgrid tr.selectedRow');
+                    if (selected.length === 0) {
+                        selected = $(this).addClass('selectedRow');
+                    }
+                    var container = $('<div/>').attr('id', 'draggingContainer');
+                    container.append(selected.clone().removeClass("selectedRow"));
+                    return container;
+                }
+            });
+
+        $("#table1 .childgrid, #table2 .childgrid").droppable({
+            drop: function (event, ui) {
+                $(this).append(ui.helper.children());
+                $('.selectedRow').remove();
+            }
+        });
+
+        $(document).on("click", ".childgrid tr", function () {
+            $(this).toggleClass("selectedRow");
+        });
+    </script>
 
 
 
