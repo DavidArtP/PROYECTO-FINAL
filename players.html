@@ -14,6 +14,7 @@
 
     </script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+     <script type="text/javascript" src="js/jquery.session.js"></script>
 
 </head>
 
@@ -46,7 +47,7 @@
             <div class="col-md-3">
                 <div class="col-md-12">
                     <img src="img/softandwet.jpg" class="imagen-perfil"></img>
-                   <div class="letra-parrafo letra-amarilla"><a class="letra-amarilla" href="yalogeado.html">Darckarian</a>
+                   <div class="letra-parrafo letra-amarilla"><a class="letra-amarilla" href="yalogeado.html"><div id="username"></div></a>
                     </div>
                     <br>
                     <div class="container container2">
@@ -307,5 +308,11 @@
                         </div>
                         
                 </footer>
+
+            <script>
+                $(document).ready(function(){
+                    $("#username").append($.session.get("username"));
+                });
+            </script>
 </body>
 </html>

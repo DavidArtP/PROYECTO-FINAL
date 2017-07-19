@@ -73,7 +73,7 @@ tbody td:last-child, thead th:last-child {
     width: 60%;
 }
 .marco100{
-    width: 372px;
+    width: 746px;
     height: 100%;
 }
 .imagen-logo{
@@ -303,4 +303,24 @@ tbody td:last-child, thead th:last-child {
 }
 .margender2{
   margin-right: 40%;
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: #ffd82d;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px black;
+  outline: 0 none;
 }
