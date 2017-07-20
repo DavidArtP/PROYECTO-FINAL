@@ -118,7 +118,7 @@ tbody td:last-child, thead th:last-child {
 }
 @media only screen and (max-width: 500px){
     body{
-        background-color: lightblue;
+        background-color: white;
     }
 }
 .margin-top2{
@@ -323,4 +323,55 @@ input[type="color"]:focus,
   border-color: #ffd82d;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px black;
   outline: 0 none;
+}
+.tablax table.scroll tbody {
+    height: 1000px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: #dddddd;
+}
+
+.drops{
+  width: 100%;
+  color: black;
+}
+.btn-primary {
+    color: black;
+    background-color: #ffd82d;
+    border-color: #fed136;
+}
+.btn-primary:link {
+    color: black;
+    background-color: #ffd82d;
+    border-color: #fed136;
+}
+
+.btn-primary:visited {
+    color: black;
+    background-color: #ffd82d;
+    border-color: #fed136;
+}
+  .btn-primary:hover {
+    color: black;
+    background-color: #ffd82d;
+    border-color: #fed136;
+}
+  .btn-primary:active {
+    color: black;
+    background-color: #ffd82d;
+    border-color: #fed136;
+}
+  .btn-primary.active, .btn-primary:active, .open > .dropdown-toggle.btn-primary {
+    color: black;
+    background-color: #ffd82d;
+    border-color: #fed136;
+}
+
+.btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary.focus:active, .btn-primary:active:focus, .btn-primary:active:hover, .open > .dropdown-toggle.btn-primary.focus, .open > .dropdown-toggle.btn-primary:focus, .open > .dropdown-toggle.btn-primary:hover {
+    color: black;
+    background-color: #ffd82d;
+    border-color: #fed136;
+}
+.dropdown-menu{
+  width: 100%;
 }
