@@ -6,7 +6,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/styles.css" rel="stylesheet" media="screen">
     <link href="css/yalogeado.css" rel="stylesheet" media="screen">
-    
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 
     </script>
@@ -30,11 +30,11 @@
                 <div class="col-md-1">
                     <a href="https://www.twitch.tv/" target="_blank"> <img src="img/logotwirch.png" class="imagen-logitos"> </img></a>
                 </div>
-            <div class="col-md-4">
-                <div class="titulo-navbar letra-amarilla letra-titulo letra-caligrafia alineacion-central">
-                    GamBets
+                <div class="col-md-4">
+                    <div class="titulo-navbar letra-amarilla letra-titulo letra-caligrafia alineacion-central">
+                        GamBets
+                    </div>
                 </div>
-            </div>
             </div>
         </div>
     </nav>
@@ -43,7 +43,10 @@
             <div class="col-md-3">
                 <div class="col-md-12">
                     <img src="img/softandwet.jpg" class="imagen-perfil"></img>
-                    <div class="letra-parrafo letra-amarilla"><a class="letra-amarilla" href="yalogeado.html"><div id="username"></div></a>
+                    <div class="letra-parrafo letra-amarilla">
+                        <a class="letra-amarilla" href="yalogeado.html">
+                            <div id="username"></div>
+                        </a>
                     </div>
                     <br>
                     <div class="container container2">
@@ -66,7 +69,7 @@
                         <hr>
                         <a class="letra-blanca" href="edit.html"> Edit Profile</a>
                         <hr>
-                        <a class="letra-blanca" href="index.html" onclick="signout()"> Log Out</a>
+                        <a class="letra-blanca" href="index.html" id="signout"> Log Out</a>
                     </div>
                 </div>
             </div>
@@ -91,7 +94,8 @@
                             </tr>
                             <tr>
                                 <td class="marco60">Won 30$</td>
-                                   <td class="marco60">Ovewatch Chammpionship</td>
+                                <td class="marco60">Ovewatch Chammpionship</td>
+                                <td class="marco60">Mexico</td>
                             </tr>
                             <tr>
                                 <td class="marco60">Centro comercial Moctezuma</td>
@@ -118,31 +122,31 @@
                                 <td class="marco60">Giovanni Rovelli</td>
                                 <td class="marco60">Italy</td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <td class="marco60">Magazzini Alimentari Riuniti</td>
                                 <td class="marco60">Giovanni Rovelli</td>
                                 <td class="marco60">Italy</td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <td class="marco60">Magazzini Alimentari Riuniti</td>
                                 <td class="marco60">Giovanni Rovelli</td>
                                 <td class="marco60">Italy</td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <td class="marco60">Magazzini Alimentari Riuniti</td>
                                 <td class="marco60">Giovanni Rovelli</td>
                                 <td class="marco60">Italy</td>
                             </tr>
-                             <tr>
+                            <tr>
                                 <td class="marco60">Magazzini Alimentari Riuniti</td>
                                 <td class="marco60">Giovanni Rovelli</td>
                                 <td class="marco60">Italy</td>
                             </tr>
                         </table>
                     </div>
-                </div>              <td class="marco60">Overwatch</td>
-               
-                    <nav class="navbar navbar-default fondo-negro margin-top">
+                </div>
+
+                <nav class="navbar navbar-default fondo-negro margin-top">
                     <div class="container-fluid">
                         <div class="col-md-12">
                             <div class="titulo-navbar letra-amarilla letra-news letra-caligrafia alineacion-central">
@@ -206,66 +210,71 @@
                                 <td class="marco100">Island Trading</td>
                                 <td class="marco100">Helen Bennett</td>
                             </tr>
-                            
+
                         </table>
                     </div>
                 </div>
             </div>
     </section>
     <br><br><br><br>
-                <footer>
-                    <hr>
-                        <div class="container">
-                            <div class="col-md-12">
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Contact Us</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Always Open</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Programing</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Studies</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Partnerships</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Ubication:My House</p> 
-                                </div>
-                            </div>
-                        </div>
-                        
-                </footer>
-            <script>
-                    var $table = $('table.scroll'),
-                    $bodyCells = $table.find('tbody tr:first').children(),
-                    colWidth;
-//SCROLL//
-                // Adjust the width of thead cells when window resizes
-                $(window).resize(function() {
-                    // Get the tbody columns width array
-                    colWidth = $bodyCells.map(function() {
-                        return $(this).width();
-                    }).get();
-                    
-                    // Set the width of thead columns
-                    $table.find('thead tr').children().each(function(i, v) {
-                        $(v).width(colWidth[i]);
-                    });    
-                }).resize(); // Trigger resize handler
+    <footer>
+        <hr>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="col-md-2">
+                    <p class="letra-blanca">Contact Us</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Always Open</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Programing</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Studies</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Partnerships</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Ubication:My House</p>
+                </div>
+            </div>
+        </div>
 
-                function signout(){
-                    FB.logout(function(response){
-                        //Person is now logged out
-                    });
-                }
-                $(document).ready(function(){
-                    $("#username").append($.session.get("username"));
+    </footer>
+    <script>
+        var $table = $('table.scroll'),
+            $bodyCells = $table.find('tbody tr:first').children(),
+            colWidth;
+        //SCROLL//
+        // Adjust the width of thead cells when window resizes
+        $(window).resize(function () {
+            // Get the tbody columns width array
+            colWidth = $bodyCells.map(function () {
+                return $(this).width();
+            }).get();
+
+            // Set the width of thead columns
+            $table.find('thead tr').children().each(function (i, v) {
+                $(v).width(colWidth[i]);
+            });
+        }).resize(); // Trigger resize handler
+
+        $("#signout").click(function (e) {
+            if (confirm("Do you want to Log Out?")) {
+                FB.logout(function (response) {
+                    //Person is now logged out
                 });
-            </script>
+            } else {
+                e.preventDefault();
+            }
+
+        });
+        $(document).ready(function () {
+            $("#username").append($.session.get("username"));
+        });
+    </script>
 </body>
 
 </html>

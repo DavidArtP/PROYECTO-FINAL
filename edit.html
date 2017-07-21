@@ -12,7 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
 
-    
+
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
     </script>
@@ -76,7 +76,7 @@
                         <hr>
                         <a class="letra-amarilla" href="edit.html"> Edit Profile</a>
                         <hr>
-                        <a class="letra-blanca" href="index.html" onclick="signout()"> Log Out</a>
+                        <a class="letra-blanca" href="index.html" id="signout"> Log Out</a>
                     </div>
                 </div>
             </div>
@@ -146,23 +146,57 @@
                     </div>
                 </div>
                 <div class="letra-amarilla letra-titulo-secundario">Region:</div>
-            <div class="form-group">
-                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ej;America, Europe, Asia and Africa">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Ej;America, Europe, Asia and Africa">
+                </div>
+                <button type="submit" class="btn btn-default margen-top">Save</button>
             </div>
-            <button type="submit" class="btn btn-default margen-top">Save</button>
-            </div>
-
-
     </section>
+    <br><br><br><br>
+    <footer>
+        <hr>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="col-md-2">
+                    <p class="letra-blanca">Contact Us</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Always Open</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Programing</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Studies</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Partnerships</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Ubication:My House</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
     <script>
         $(document).ready(function () {
             $("#username").append($.session.get("username"));
             $('#datetimepicker').datetimepicker();
             FB.getLoginStatus(function (response) {
                 statusChangeCallback(response);
-            }); 
-        }); 
+            });
+        });
+        $("#signout").click(function (e) {
+            if (confirm("Do you want to Log Out?")) {
+                FB.logout(function (response) {
+                    //Person is now logged out
+                });
+            } else {
+                e.preventDefault();
+            }
 
+        });
     </script>
 </body>
 

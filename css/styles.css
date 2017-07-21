@@ -1,5 +1,16 @@
-html,body{
-    background-color: #232323;
+html{
+     background: url('../img/madera.png');
+	background-repeat: repeat-x repeat-y;
+	background-position: top;
+    background-size: contain;
+    height: 100%;
+}
+body{
+    background: rgba(25, 25, 25, .80);
+    min-height: 100%;
+}
+footer{
+    background-color: black;
 }
 .letra-caligrafia{
     font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
@@ -39,10 +50,13 @@ html,body{
 }
 /*por si pongo o no video*/
 .section_1{
- background-color: #232323;
  padding: 15px;
  padding-left: 45px;
  padding-right: 45px;
+ min-height: 100%;
+}
+.section_2{
+    margin-bottom: 250px;
 }
 .img-titulo{
     width: 70px;

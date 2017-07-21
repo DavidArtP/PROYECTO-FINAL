@@ -375,3 +375,17 @@ input[type="color"]:focus,
 .dropdown-menu{
   width: 100%;
 }
+
+.margenbajo{
+  margin-bottom: 100px;
+}
+
+.margen-top3{
+  margin-top: 150px;
+}
+.aparece{
+  display: block;
+}
+.desaparece{
+  display: none;
+}

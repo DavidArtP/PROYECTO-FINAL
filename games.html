@@ -7,14 +7,15 @@
     <link href="css/styles.css" rel="stylesheet" media="screen">
     <link href="css/yalogeado.css" rel="stylesheet" media="screen">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href= "https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" >
-            <script src="https://code.jquery.com/jquery-1.10.2.js" >
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js">
+
     </script>
     <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
     </script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-     <script type="text/javascript" src="js/jquery.session.js"></script>
+    <script type="text/javascript" src="js/jquery.session.js"></script>
 
 </head>
 
@@ -47,7 +48,10 @@
             <div class="col-md-3">
                 <div class="col-md-12">
                     <img src="img/softandwet.jpg" class="imagen-perfil"></img>
-                    <div class="letra-parrafo letra-amarilla"><a class="letra-amarilla" href="yalogeado.html"><div id="username"></div></a>
+                    <div class="letra-parrafo letra-amarilla">
+                        <a class="letra-amarilla" href="yalogeado.html">
+                            <div id="username"></div>
+                        </a>
                     </div>
                     <br>
                     <div class="container container2">
@@ -70,7 +74,7 @@
                         <hr>
                         <a class="letra-blanca" href="edit.html"> Edit Profile</a>
                         <hr>
-                        <a class="letra-blanca" href="index.html" onclick="signout()"> Log Out</a>
+                        <a class="letra-blanca" href="index.html" id="signout"> Log Out</a>
                     </div>
                 </div>
             </div>
@@ -289,47 +293,47 @@
             </div>
 
     </section>
-<br><br><br><br>
-                <footer class="marginbottom">
-                    <hr>
-                        <div class="container">
-                            <div class="col-md-12">
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Contact Us</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Always Open</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Programing</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Studies</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Partnerships</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Ubication:My House</p> 
-                                </div>
-                            </div>
-                        </div>
-                        
-                </footer>
+    <br><br><br><br>
+    <footer>
+        <hr>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="col-md-2">
+                    <p class="letra-blanca">Contact Us</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Always Open</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Programing</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Studies</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Partnerships</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Ubication:My House</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
 
 
     <script>
-            $("#table1 .childgrid tr, #table2 .childgrid tr").draggable({
-                helper: function () {
-                    var selected = $('.childgrid tr.selectedRow');
-                    if (selected.length === 0) {
-                        selected = $(this).addClass('selectedRow');
-                    }
-                    var container = $('<div/>').attr('id', 'draggingContainer');
-                    container.append(selected.clone().removeClass("selectedRow"));
-                    return container;
+        $("#table1 .childgrid tr, #table2 .childgrid tr").draggable({
+            helper: function () {
+                var selected = $('.childgrid tr.selectedRow');
+                if (selected.length === 0) {
+                    selected = $(this).addClass('selectedRow');
                 }
-            });
+                var container = $('<div/>').attr('id', 'draggingContainer');
+                container.append(selected.clone().removeClass("selectedRow"));
+                return container;
+            }
+        });
 
         $("#table1 .childgrid, #table2 .childgrid").droppable({
             drop: function (event, ui) {
@@ -341,20 +345,21 @@
         $(document).on("click", ".childgrid tr", function () {
             $(this).toggleClass("selectedRow");
         });
-        $(document).ready(function(){
-                    $("#username").append($.session.get("username"));
+        $(document).ready(function () {
+            $("#username").append($.session.get("username"));
+        });
+
+        $("#signout").click(function (e) {
+            if (confirm("Do you want to Log Out?")) {
+                FB.logout(function (response) {
+                    //Person is now logged out
                 });
+            } else {
+                e.preventDefault();
+            }
+
+        });
     </script>
-
-
-
-
-
-
-
-
-
-
 
 </body>
 

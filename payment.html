@@ -15,7 +15,7 @@
 
     </script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-     <script type="text/javascript" src="js/jquery.session.js"></script>
+    <script type="text/javascript" src="js/jquery.session.js"></script>
 
 </head>
 
@@ -48,7 +48,10 @@
             <div class="col-md-3">
                 <div class="col-md-12">
                     <img src="img/softandwet.jpg" class="imagen-perfil"></img>
-                    <div class="letra-parrafo letra-amarilla"><a class="letra-amarilla" href="yalogeado.html"><div id="username"></div></a>
+                    <div class="letra-parrafo letra-amarilla">
+                        <a class="letra-amarilla" href="yalogeado.html">
+                            <div id="username"></div>
+                        </a>
                     </div>
                     <br>
                     <div class="container container2">
@@ -71,13 +74,13 @@
                         <hr>
                         <a class="letra-blanca" href="edit.html"> Edit Profile</a>
                         <hr>
-                        <a class="letra-blanca" href="index.html" onclick="signout()"> Log Out</a>
+                        <a class="letra-blanca" href="index.html" id="signout"> Log Out</a>
                     </div>
                 </div>
             </div>
-        <div class="col-md-1"></div>
-        <div class="col-md-8">
-            <nav class="navbar navbar-default fondo-negro">
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
+                <nav class="navbar navbar-default fondo-negro">
                     <div class="container-fluid">
                         <div class="col-md-12">
                             <div class="titulo-navbar letra-amarilla letra-news letra-caligrafia alineacion-central">
@@ -87,61 +90,72 @@
                     </div>
                 </nav>
                 <div class="row margen-imagenes2">
-                            <div class="col-md-4">
-                                <img src="img/paypallogo.png" class="img-juegos2 margen-top"></img>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="img/masterlogo.png" class="img-juegos2 margen-top"></img>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="img/visalogo.png" class="img-juegos2 margen-top"></img>
-                            </div>
-                        </div>
-            <div class="container margen-tarjeta-credito">
+                    <div class="col-md-4">
+                        <img src="img/paypallogo.png" class="img-juegos2 margen-top"></img>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/masterlogo.png" class="img-juegos2 margen-top"></img>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/visalogo.png" class="img-juegos2 margen-top"></img>
+                    </div>
+                </div>
+                <div class="container margen-tarjeta-credito">
                     <div class="form-group margender2 margen-top">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Credit Card Number">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Credit Card Number">
                     </div>
                     <div class="form-group margender2 margen-top">
-                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Expiration Date (Month/Year) Ej. 02(February)/19(Year:2019)">
+                        <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Expiration Date (Month/Year) Ej. 02(February)/19(Year:2019)">
                     </div>
                     <div class="form-group margender2 margen-top">
-                                <input type="password" class="form-control" id="exampleInputEmail1" placeholder="CVV Code">
+                        <input type="password" class="form-control" id="exampleInputEmail1" placeholder="CVV Code">
                     </div>
-                            <button type="submit" class="btn btn-default margen-top">Save</button>
+                    <button type="submit" class="btn btn-default margen-top">Save</button>
+                </div>
+            </div>
+    </section>
+    <footer>
+        <hr>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="col-md-2">
+                    <p class="letra-blanca">Contact Us</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Always Open</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Programing</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Studies</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Partnerships</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Ubication:My House</p>
+                </div>
             </div>
         </div>
-        </section>
-                <footer>
-                    <hr>
-                        <div class="container">
-                            <div class="col-md-12">
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Contact Us</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Always Open</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Programing</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Studies</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Partnerships</p> 
-                                </div>
-                                <div class="col-md-2">
-                                    <p class="letra-blanca">Ubication:My House</p> 
-                                </div>
-                            </div>
-                        </div>
-                        
-                </footer>
 
-            <script>
-                 $(document).ready(function(){
-                    $("#username").append($.session.get("username"));
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $("#username").append($.session.get("username"));
+        });
+        $("#signout").click(function (e) {
+            if (confirm("Do you want to Log Out?")) {
+                FB.logout(function (response) {
+                    //Person is now logged out
                 });
-            </script>
+            } else {
+                e.preventDefault();
+            }
+
+        });
+    </script>
 </body>
+
 </html>

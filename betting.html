@@ -74,7 +74,7 @@
                         <hr>
                         <a class="letra-blanca" href="edit.html"> Edit Profile</a>
                         <hr>
-                        <a class="letra-blanca" href="index.html" onclick="signout()"> Log Out</a>
+                        <a class="letra-blanca" href="index.html" id="signout"> Log Out</a>
                     </div>
                 </div>
             </div>
@@ -93,20 +93,155 @@
                     <button class="btn btn-primary dropdown-toggle drops" type="button" data-toggle="dropdown">Games
   <span class="caret"></span></button>
                     <ul class="dropdown-menu">
+                        <li onclick="opendrop(1);"><a href="#">Overwatch</a></li>
+                        <li onclick="opendrop(2);"><a href="#">League of Legends</a></li>
+                        <li onclick="opendrop(3);"><a href="#">Street Fighter V</a></li>
+                        <li onclick="opendrop(4);"><a href="#">Paragon</a></li>
+                        <li onclick="opendrop(5);"><a href="#">Injustice 2</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown margen-top3 desaparece" id="events1">
+                    <button class="btn btn-primary dropdown-toggle drops" type="button" data-toggle="dropdown">Events to Come1
+  <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
                         <li><a href="#">HTML</a></li>
                         <li><a href="#">CSS</a></li>
                         <li><a href="#">JavaScript</a></li>
                     </ul>
                 </div>
 
+                <div class="dropdown margen-top3 desaparece" id="events2">
+                    <button class="btn btn-primary dropdown-toggle drops" type="button" data-toggle="dropdown">Events to Come2
+  <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown margen-top3 desaparece" id="events3">
+                    <button class="btn btn-primary dropdown-toggle drops" type="button" data-toggle="dropdown">Events to Come3
+  <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown margen-top3 desaparece" id="events4">
+                    <button class="btn btn-primary dropdown-toggle drops" type="button" data-toggle="dropdown">Events to Come4
+  <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </div>
+
+                <div class="dropdown margen-top3 desaparece" id="events5">
+                    <button class="btn btn-primary dropdown-toggle drops" type="button" data-toggle="dropdown">Events to Come5
+  <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">HTML</a></li>
+                        <li><a href="#">CSS</a></li>
+                        <li><a href="#">JavaScript</a></li>
+                    </ul>
+                </div>
+
+
             </div>
-
-
     </section>
+    <br><br><br><br>
+    <footer>
+        <hr>
+        <div class="container">
+            <div class="col-md-12">
+                <div class="col-md-2">
+                    <p class="letra-blanca">Contact Us</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Always Open</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Programing</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Studies</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Partnerships</p>
+                </div>
+                <div class="col-md-2">
+                    <p class="letra-blanca">Ubication:My House</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
     <script>
         $(document).ready(function () {
             $("#username").append($.session.get("username"));
         });
+        $("#signout").click(function (e) {
+            if (confirm("Do you want to Log Out?")) {
+                FB.logout(function (response) {
+                    //Person is now logged out
+                });
+            } else {
+                e.preventDefault();
+            }
+
+        });
+        function opendrop(x) {
+            if (x == "1"){
+                $("#events1").addClass("aparece");
+                 $("#events1").removeClass("desaparece");
+                $("#events2").addClass("desaparece");
+                $("#events3").addClass("desaparece");
+                $("#events4").addClass("desaparece");
+                $("#events5").addClass("desaparece");
+            }
+           
+           if (x == "2"){
+                $("#events2").addClass("aparece");
+                $("#events2").removeClass("desaparece");
+                $("#events1").addClass("desaparece");
+                $("#events3").addClass("desaparece");
+                $("#events4").addClass("desaparece");
+                $("#events5").addClass("desaparece");
+           }
+           
+           if (x == "3"){
+                $("#events3").addClass("aparece");
+                $("#events3").removeClass("desaparece");
+                $("#events2").addClass("desaparece");
+                $("#events1").addClass("desaparece");
+                $("#events4").addClass("desaparece");
+                $("#events5").addClass("desaparece");
+           }
+           
+           if (x == "4"){
+                $("#events4").addClass("aparece");
+                $("#events4").removeClass("desaparece");
+                $("#events2").addClass("desaparece");
+                $("#events3").addClass("desaparece");
+                $("#events1").addClass("desaparece");
+                $("#events5").addClass("desaparece");
+           }
+           
+           if (x == "5"){
+                $("#events5").addClass("aparece");
+                $("#events5").removeClass("desaparece");
+                $("#events2").addClass("desaparece");
+                $("#events3").addClass("desaparece");
+                $("#events4").addClass("desaparece");
+                $("#events1").addClass("desaparece");
+           }
+           
+        }
     </script>
 </body>
 
